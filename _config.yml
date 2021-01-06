@@ -50,3 +50,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Google analytics
+google_analytics: G-KTJ1VBRVWL

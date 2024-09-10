@@ -2,7 +2,6 @@
 layout: post
 title:  "Cheap blogging with Jekyll"
 date:   2021-01-03 17:57:37 -0500
-categories: life 
 ---
 
 **tl;dr How to host your blog using Jekyll and AWS Amplify**

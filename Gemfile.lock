@@ -64,7 +64,7 @@ PLATFORMS
   arm64-darwin-23
 
 DEPENDENCIES
-  jekyll
+  jekyll (= 4.3.3)
 
 BUNDLED WITH
    2.2.4

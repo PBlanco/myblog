@@ -1,0 +1,166 @@
+/* Global Styles */
+:root {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica; 
+  font-size: 13px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-right: 130px; /* Add padding to account for the right nav */
+}
+
+/* Main Content */
+main {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+main p {
+  margin-bottom: 1.2em;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+main a {
+  color: #219ebc;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* Right Navigation */
+.right-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 130px; 
+  height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  margin-top: 13px;
+}
+
+.right-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.right-nav li {
+  margin-bottom: 5px;
+  text-align: right;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.right-nav a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.right-nav a:hover {
+  color: #219ebc;
+  text-decoration: underline;
+}
+
+.right-nav a.current {
+  color: #219ebc;
+  font-weight: 600;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 428px) {
+  body {
+    padding-right: 0; /* Remove padding for mobile view */
+  }
+
+  .right-nav {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .right-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .right-nav li {
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+
+  .right-nav a {
+    text-align: left;
+  }
+  
+  main {
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+/* Markdown Code Blocks */
+pre {
+  background-color: #282c34;
+  color: #abb2bf;
+  border-radius: 6px;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+pre code {
+  display: block;
+  line-height: 1.5;
+}
+
+/* Inline code */
+p code, li code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+/* Markdown Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+
